@@ -1,49 +1,31 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
 
-:root{
-    --fonte-padrao: var( 'Passion One', cursive)
-}
-
 *{
-    font-family: 'Passion One', 'cursive';
-    font-weight: normal;
+    margin: 0px;
+    padding: 0px;
 }
 
-body{
-    padding: 0px;
-    margin: 0px;
+html, body{
+    background-color: gray;
+    min-height: 100vh;
 }
 
 header{
     background-color: black;
     color: white;
     text-align: center;
-    height: 235px;
-    position: relative;
+    font-size: 5vw;
 }
 
 header h1{
-    margin: 0px auto;
-    font-size: 600%;
-    font-weight: bold;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -60%);
-    width: 650px;
+    padding-top: 50px;
+    font-variant: small-caps;
+    font-family: 'Passion One', 'cursive';
 }
 
 header p{
-    margin: 0px auto;
-    padding: 15px;
-    font-size: 1.2em;
-    font-weight: normal;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, 80%);
-    width: 600px;
+    padding-bottom: 50px;
 }
 
 header a{
@@ -57,31 +39,44 @@ header a:hover{
 }
 
 section{
-    background-color: white;
-    line-height: 50px;
-    font-size: 2em;
-    font-weight: normal;
-}
-
-section p{
-    width: 280px;
-    margin-left: 30px;
-    padding: 3px;
+    line-height: 2em;
+    padding-left: 30px;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    font-family: 'Passion One', 'cursive';
+    font-size: 5vw;
     
 }
 
-section#fundo1{
-    background-image: url(imagens/bk1.jpg);
+.cordel{
+    background-color: white;
+}
+
+.cordel-fundo{
+    box-shadow: inset 0px 3px 12px 0px rgba(0, 0, 0, 0.543);  
+}
+
+.cordel-fundo > p{
+    background-color: rgba(0, 0, 0, 0.479);
+    color: white;
+    border-radius: 3px;
+    display: inline-block;
+    padding: 5px;
+}
+#bk1{
+    background: url(imagens/bk2.jpg) center top no-repeat  fixed;
     background-size: cover;
-    color: white;
 }
 
-section#fundo1 p{
-    background-color: rgba(0, 0, 0, 0.716);
-    margin: 0px 0px;
+#bk2{
+    background: url(imagens/bk1.jpg) right bottom no-repeat fixed;
+    background-size: cover;
 }
 
-section#fundo2{
-    background-image: url(imagens/bk2.jpg);
+footer{
+    background-color: black;
     color: white;
+    text-align: center;
+    padding: 5px;
+    font-size: 1.2em
 }
